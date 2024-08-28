@@ -1,0 +1,96 @@
+.project-container{
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    max-width: 100% ;
+    height: 500px;
+    margin: 0 auto; /* Center horizontally */
+
+}
+
+.tv-container{
+    display: flex;
+    /*justify-content: flex-start;*/
+    /*margin-left: 10%;*/
+    width: 100%;
+    height: 100%;
+
+}
+
+.project-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    height: 100%;
+
+}
+
+.retro-tv{
+    width: 100%; /* Set width to 100% of the parent container */
+    height: 100%; /* Set height to 100% of the parent container */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.Hotspot{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: none;
+}
+
+.centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*.close-button {*/
+/*    position: absolute;*/
+/*    top: 10px;*/
+/*    right: 10px;*/
+/*    background-color: red;*/
+/*    color: white;*/
+/*    border: none;*/
+/*    padding: 5px 10px;*/
+/*    cursor: pointer;*/
+/*    display: none; !* Initially hidden *!*/
+/*}*/
+
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
