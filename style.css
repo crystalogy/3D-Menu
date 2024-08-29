@@ -12,7 +12,7 @@
     display: flex;
     /*justify-content: flex-start;*/
     /*margin-left: 10%;*/
-    width: 100%;
+    width: 45%;
     height: 100%;
 
 }
@@ -23,6 +23,7 @@
     justify-content: center;
     width: 60%;
     height: 100%;
+    padding-right: 15%;
 
 }
 
@@ -62,24 +63,62 @@
 
 .modal {
     display: none; /* Hidden by default */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    /*overflow: hidden; !* Enable scroll if needed *!*/
+    background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
 }
 
 .modal-content {
     background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    width: 100%; /* Could be more or less, depending on screen size */
+    height: 90%; /* Increase the height */
+    /*max-height: 90%; !* Optional: set a max-height *!*/
+    max-width: 1500px; /* Optional: set a max-width */
 }
+
+.modal-video{
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100%;
+}
+
+.modal-content iframe {
+    width: 80vw; /* 80% of the viewport width */
+    height: 45vw; /* Maintain 16:9 aspect ratio */
+    max-width: 85%; /* Ensure it doesn't exceed the modal's width */
+    max-height: 85%; /* Ensure it doesn't exceed the modal's height */
+}
+
+/*.modal {*/
+/*    display: none; !* Hidden by default *!*/
+/*    position: fixed; !* Stay in place *!*/
+/*    z-index: 1; !* Sit on top *!*/
+/*    left: 0;*/
+/*    top: 0;*/
+/*    width: 100%; !* Full width *!*/
+/*    height: 100%; !* Full height *!*/
+/*    overflow: hidden; !* Enable scroll if needed *!*/
+/*    background-color: rgb(0,0,0); !* Fallback color *!*/
+/*    background-color: rgba(0,0,0,0.4); !* Black w/ opacity *!*/
+/*}*/
+
+/*.modal-content {*/
+/*    background-color: #fefefe;*/
+/*    margin: 15% auto; !* 15% from the top and centered *!*/
+/*    padding: 20px;*/
+/*    border: 1px solid #888;*/
+/*    width: 80%; !* Could be more or less, depending on screen size *!*/
+/*}*/
 
 .close-button {
     color: #aaa;

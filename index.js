@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.querySelectorAll('.Hotspot').forEach(hotspot => {
         hotspot.addEventListener('click', () => {
-            modal.style.display = 'block'; // Show the modal
+            modal.style.display = 'flex'; // Show the modal
             originalModel.style.display = 'none'; // Hide the original model
 
             modalModelViewer.style.width = '1700px';  // Change width
