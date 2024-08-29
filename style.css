@@ -25,7 +25,10 @@
     width: 50%;
     height: 100%;
     padding-right: 15%;
+}
 
+h1{
+    margin-bottom: 0;
 }
 
 .retro-tv{
