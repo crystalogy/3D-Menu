@@ -1,3 +1,8 @@
+body{
+    background-color: #ffffff;
+}
+
+
 .project-container{
     display: flex;
     flex-direction: row;
@@ -15,7 +20,15 @@
     width: 30%;
     height: 100%;
     padding-left: 15%;
+}
 
+.char{
+    display: flex;
+    /*justify-content: flex-start;*/
+    /*margin-left: 10%;*/
+    width: 30%;
+    height: 100%;
+    padding-right: 15%;
 }
 
 .project-text{
@@ -27,8 +40,33 @@
     padding-right: 15%;
 }
 
+.char-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    padding-left: 15%;
+}
+
+.char-text h1{
+text-align: right
+}
+
 h1{
     margin-bottom: 0;
+
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p{
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .retro-tv{
