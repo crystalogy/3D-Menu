@@ -1,126 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+  <head>
+    <meta charset="UTF-8" />
+    <title>3D Food Menu</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jua&family=League+Gothic&family=Oswald:wght@200..700&family=Ysabeau+SC:wght@1..1000&display=swap"
+      rel="stylesheet"
+    />
 
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-------------------------------- Menu Container -------------------------------------->
+    <div class="menu-container">
+      <div id="menu-header">
+        <h1 id="title-menu">Menu</h1>
+        <!-- <p>Welcome to our bakery! We take pride in offering a delightful selection of freshly baked pastries and sweets. Our menu features a variety of treats, each crafted with the finest ingredients and a touch of love.</p> -->
+        <p>
+          Explore our 3D food menu below. You can rotate the pastries to view
+          them from different angles. Click on the pastry names to see them up
+          close and learn more about each delicious item. Enjoy your virtual
+          visit and we hope to see you in our bakery soon!
+        </p>
+      </div>
 
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-<!--<div class="project-container project1">-->
-<!--    <div class="tv-container">-->
-<!--                <span id="close-button" class="close-button">Close</span>-->
-<!--                    <model-viewer class="retro-tv" src="old_1980s_retro_tv_with_2k_texture.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls disable-zoom tone-mapping="neutral" poster="poster.webp" shadow-intensity="1" target="0.0005934m 0.03806m -0.19m">-->
-<!--                        <button id="close-button" class="close-button">Close</button>-->
-<!--                        <button class="Hotspot" slot="hotspot-1" data-position="-0.010997499348850172m 0.039329184103888776m -0.0010144201373961104m" data-normal="0.008348567161601698m -0.024764475363974033m 0.9996584527658913m" data-visibility-attribute="visible"></button>-->
-<!--                    </model-viewer>-->
-<!--    </div>-->
-<!--    <div class="project-text">-->
-<!--        <h1>Project 1</h1>-->
-<!--        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>-->
-<!--    </div>-->
-<!--</div>-->
-
-
-
-
-
-
-
-<div class="project-container project1">
-    <div class="tv-container">
-        <model-viewer id="original-model" class="retro-tv" src="old_1980s_retro_tv_with_2k_texture.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls disable-zoom tone-mapping="neutral" poster="poster.webp" shadow-intensity="1" camera-orbit="0deg 86deg 12m" field-of-view="25deg" camera-target="0m 0.008m 0m" scale="0.2 0.2 0.2">
-            <button class="Hotspot" slot="hotspot-1" data-position="-0.001897499348850172m 0.008029184103888776m -0.0010144201373961104m" data-normal="0.008348567161601698m -0.024764475363974033m 0.9996584527658913m" data-visibility-attribute="visible"></button>
-        </model-viewer>
-        <div id="model-modal" class="modal">
-            <div class="modal-content">
-                <span id="close-button" class="close-button">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" id="Interface-Essential-Signout-Logout--Streamline-Pixel" height="40" width="40"><desc>Interface Essential Signout Logout Streamline Icon: https://streamlinehq.com</desc><title>interface-essential-signout-logout</title><g><path d="m31.43125 11.425 0 5.7125 -7.625 0 0 3.8125 7.625 0 0 5.7125 1.9 0 0 -1.9 1.9125 0 0 -1.9 1.9 0 0 -1.9125 1.9 0 0 -3.8125 -1.9 0 0 -1.9 -1.9 0 0 -1.9 -1.9125 0 0 -1.9125 -1.9 0z" fill="currentColor" stroke-width="1"></path><path d="M25.71875 26.662499999999998h1.9v7.625h-1.9Z" fill="currentColor" stroke-width="1"></path><path d="M25.71875 1.9h1.9v9.525h-1.9Z" fill="currentColor" stroke-width="1"></path><path d="m18.09375 38.1 0 -1.9125 7.625 0 0 -1.9 -7.625 0 0 -24.7625 -1.9 0 0 28.575 1.9 0z" fill="currentColor" stroke-width="1"></path><path d="M10.48125 38.1h5.7125V40h-5.7125Z" fill="currentColor" stroke-width="1"></path><path d="M12.38125 20.950000000000003h1.9v3.8125h-1.9Z" fill="currentColor" stroke-width="1"></path><path d="M12.38125 7.625h3.8125v1.9h-3.8125Z" fill="currentColor" stroke-width="1"></path><path d="M6.66875 36.1875h3.8125v1.9125h-3.8125Z" fill="currentColor" stroke-width="1"></path><path d="M8.568750000000001 5.7125h3.8125V7.625h-3.8125Z" fill="currentColor" stroke-width="1"></path><path d="M2.85625 34.2875h3.8125v1.9h-3.8125Z" fill="currentColor" stroke-width="1"></path><path d="M4.76875 3.8125h3.8v1.9h-3.8Z" fill="currentColor" stroke-width="1"></path><path d="m2.85625 0 0 1.9 -1.9 0 0 32.3875 1.9 0 0 -30.474999999999998 1.9125 0 0 -1.9125 20.950000000000003 0 0 -1.9 -22.862499999999997 0z" fill="currentColor" stroke-width="1"></path></g></svg>                </span>
-<!--                <model-viewer class="retro-tv" src="old_1980s_retro_tv_with_2k_texture.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls disable-zoom tone-mapping="neutral" poster="poster.webp" shadow-intensity="1" target="0.0005934m 0.03806m -0.19m">-->
-<!--                    <button class="Hotspot" slot="hotspot-1" data-position="-0.010997499348850172m 0.039329184103888776m -0.0010144201373961104m" data-normal="0.008348567161601698m -0.024764475363974033m 0.9996584527658913m" data-visibility-attribute="visible"></button>-->
-<!--                </model-viewer>-->
-                <div class="modal-video">
-<iframe width="600" height="345" src="https://www.youtube.com/embed/IRPzW10hfCY?si=LXXnLvbUBsI_izFX&amp;controls=0&amp;start=1243&amp;autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen"></iframe>                </div>
+      <!-------------------------------- Food Items -------------------------------------->
+      <div class="menu-items-container">
+        <!-------------------------------------- Item 1 --------------------------------------->
+        <div class="menu-item">
+          <model-viewer
+            class="food-photo"
+            src="extra_chocolate_marshmallow_cupcake.glb"
+            ar
+            ar-modes="webxr scene-viewer quick-look"
+            camera-controls
+            disable-zoom
+            tone-mapping="neutral"
+            poster="poster.webp"
+            shadow-intensity="1"
+            autoplay
+            animation-name="city_idle"
+          ></model-viewer>
+          <div class="menu-text">
+            <div class="item-header">
+              <h1 class="food-name">Chocolate Marshmallow Cupcake</h1>
+              <span class="price">$6.99</span>
             </div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+              felis quam, feugiat eu felis quis, pretium auctor elit.
+            </p>
+          </div>
         </div>
+        <!------------------------------------------------------------------------------------->
+
+        <!-------------------------------------- Item 2 --------------------------------------->
+        <div class="menu-item">
+          <model-viewer
+            class="food-photo"
+            src="cream_puff_ptys.glb"
+            ar
+            ar-modes="webxr scene-viewer quick-look"
+            camera-controls
+            disable-zoom
+            tone-mapping="neutral"
+            poster="poster.webp"
+            shadow-intensity="1"
+            autoplay
+            animation-name="city_idle"
+          ></model-viewer>
+          <div class="menu-text">
+            <div class="item-header">
+              <h1 class="food-name">Cream Puff</h1>
+              <span class="price">$3.99</span>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+              felis quam, feugiat eu felis quis, pretium auctor elit.
+            </p>
+          </div>
+        </div>
+        <!------------------------------------------------------------------------------------->
+
+        <!-------------------------------------- Item 3 --------------------------------------->
+        <div class="menu-item">
+          <model-viewer
+            class="food-photo"
+            src="strawberry_and_cream_donut.glb"
+            ar
+            ar-modes="webxr scene-viewer quick-look"
+            camera-controls
+            disable-zoom
+            tone-mapping="neutral"
+            poster="poster.webp"
+            shadow-intensity="1"
+            autoplay
+            animation-name="city_idle"
+          ></model-viewer>
+          <div class="menu-text">
+            <div class="item-header">
+              <h1 class="food-name">Strawberry & Cream Donut</h1>
+              <span class="price">$4.99</span>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+              felis quam, feugiat eu felis quis, pretium auctor elit.
+            </p>
+          </div>
+        </div>
+
+        <!------------------------------------------------------------------------------------->
+
+        <!-------------------------------------- Item 4 --------------------------------------->
+        <div class="menu-item">
+          <model-viewer
+            class="food-photo"
+            src="chocolate_donut.glb"
+            ar
+            ar-modes="webxr scene-viewer quick-look"
+            camera-controls
+            disable-zoom
+            tone-mapping="neutral"
+            poster="poster.webp"
+            shadow-intensity="1"
+            autoplay
+            animation-name="city_idle"
+          ></model-viewer>
+          <div class="menu-text">
+            <div class="item-header">
+              <h1 class="food-name">Chocolate Drizzle Donut</h1>
+              <span class="price">$4.99</span>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+              felis quam, feugiat eu felis quis, pretium auctor elit.
+            </p>
+          </div>
+        </div>
+
+        <!------------------------------------------------------------------------------------->
+
+        <!-------------------------------------- Item 5 --------------------------------------->
+        <div class="menu-item">
+          <model-viewer
+            class="food-photo"
+            src="ChocolateChipCookie.glb"
+            ar
+            ar-modes="webxr scene-viewer quick-look"
+            camera-controls
+            disable-zoom
+            tone-mapping="neutral"
+            poster="poster.webp"
+            shadow-intensity="1"
+            autoplay
+            animation-name="city_idle"
+          ></model-viewer>
+          <div class="menu-text">
+            <div class="item-header">
+              <h1 class="food-name">Chocolate Chip Cookie</h1>
+              <span class="price">$1.99</span>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+              felis quam, feugiat eu felis quis, pretium auctor elit.
+            </p>
+          </div>
+        </div>
+
+        <!----------------------------------------------------------------------------------------------->
+      </div>
     </div>
-    <div class="project-text">
-        <h1> Donec Felis Quam</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec felis quam, feugiat eu felis quis, pretium auctor elit. Suspendisse eget lobortis magna, nec cursus arcu. Sed in nisl volutpat, sodales metus vel, pulvinar eros. Ut ornare, dui id euismod condimentum, diam felis suscipit lacus, id scelerisque ligula augue sed ipsum. In quis nisi non quam imperdiet efficitur at volutpat risus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aenean venenatis ante sit amet mauris maximus, nec hendrerit metus interdum. Donec rhoncus mi a nunc commodo, vel consequat ligula dictum.</p>
+
+    <!-------------------------------------- Modal Structure ---------------------------------------->
+    <div id="model-modal" class="modal">
+      <div class="modal-content">
+        <span id="close-button" class="close-button">&times;</span>
+        <model-viewer
+          class="food-models"
+          src=""
+          ar
+          ar-modes="webxr scene-viewer quick-look"
+          camera-controls
+          disable-zoom
+          tone-mapping="neutral"
+          poster="poster.webp"
+          shadow-intensity="1"
+          autoplay
+          animation-name="city_idle"
+        ></model-viewer>
+      </div>
     </div>
-</div>
+    <!---------------------------------------------------------------------------------------------->
 
-<div class="project-container project2">
-
-    <div class="char-text">
-        <h1>Arcu Donec</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec felis quam, feugiat eu felis quis, pretium auctor elit. Suspendisse eget lobortis magna, nec cursus arcu. Sed in nisl volutpat, sodales metus vel, pulvinar eros.  amet mauris maximus, nec hendrerit metus interdum. Donec rhoncus mi a nunc commodo, vel consequat ligula dictum.</p>
-    </div>
-
-    <div class="char">
-
-<model-viewer src="hero_alice_lobby.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls disable-zoom tone-mapping="neutral" poster="poster.webp" shadow-intensity="1" autoplay animation-name="city_idle" style="width: 100%; height: 100%;"> </model-viewer>
-    </div>
-
-</div>
-
-
-
-
-
-
-
-<!--<script>-->
-<!--    document.querySelectorAll('.Hotspot').forEach(hotspot => {-->
-<!--        hotspot.addEventListener('click', () => {-->
-<!--            const modelViewer = document.getElementsByClassName('retro-tv')[0];-->
-<!--            const Hotspot = document.getElementsByClassName('hotspot')[0];-->
-<!--            modelViewer.style.width = '1700px';  // Change width-->
-<!--            modelViewer.style.height = '900px'; // Change height-->
-<!--            modelViewer.classList.add('centered'); // Center the element-->
-<!--            hotspot.style.display = 'none'; // Hide the hotspot-->
-
-
-<!--            // Zoom into the model-->
-<!--            modelViewer.setAttribute('camera-orbit', '0deg 77deg 2.5m'); // Adjust as needed-->
-<!--            modelViewer.setAttribute('field-of-view', '30deg'); // Adjust as needed-->
-<!--            modelViewer.setAttribute('camera-target', '0.0005934m 0.01m -0.145m'); // Change target-->
-
-
-<!--            const closeButton = document.getElementById('close-button');-->
-<!--            closeButton.style.display = 'block';-->
-<!--        });-->
-<!--    });-->
-
-<!--    document.getElementById('close-button').addEventListener('click', () => {-->
-<!--        const modelViewer = document.getElementsByClassName('retro-tv')[0];-->
-<!--        modelViewer.style.width = `${window.innerWidth}px`;  // Set width to screen width-->
-<!--        modelViewer.style.height = `${window.innerHeight}px`; // Set height to screen height-->
-<!--        modelViewer.classList.remove('centered'); // Remove centering-->
-
-<!--        // Reset zoom-->
-<!--        modelViewer.setAttribute('camera-orbit', 'auto auto auto');-->
-<!--        modelViewer.setAttribute('field-of-view', 'auto');-->
-<!--        modelViewer.setAttribute('camera-target', 'auto'); // Reset target-->
-<!--        modelViewer.setAttribute('camera-target', '0.0005934m 0.03806m 0m');-->
-
-<!--        // Hide the close button-->
-<!--        const closeButton = document.getElementById('close-button');-->
-<!--        closeButton.style.display = 'none';-->
-
-<!--        // Show the hotspot again-->
-<!--        const hotspot = document.querySelector('.Hotspot');-->
-<!--        hotspot.style.display = 'block';-->
-<!--    });-->
-<!--</script>-->
-
-<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
-<script src="index.js" charset="-utf-8"></script>
-</body>
+    <script
+      type="module"
+      src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"
+    ></script>
+    <script src="index.js" charset="-utf-8"></script>
+  </body>
 </html>
