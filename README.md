@@ -25,13 +25,13 @@ To get started with the project, follow these steps:
 1. Clone the repository:
 
    ```sh
-   git clone https://github.com/your-username/3D-Food-Menu.git
+   git clone https://github.com/crystalogy/3D-Menu.git
    ```
 
 2. Navigate to the project directory:
 
    ```sh
-   cd 3D-Food-Menu
+   cd 3D-Menu
    ```
 
 3. Open [index.html] in your preferred web browser.
